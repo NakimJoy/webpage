@@ -1,0 +1,170 @@
+body {
+    width: 99%;
+    /* This is the width of the whole layout "content" */
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    margin: 10px;
+    padding: 11px;
+    background-color: #e717a2;
+    border-radius: 5px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #1274e4;
+}
+
+.link:hover {
+    background-color: #ddd;
+}
+
+.webpage {
+    background-color: rgb(159, 197, 230);
+    flex: 2;
+}
+
+.grid {
+    background-color: rgb(250, 194, 245);
+    flex: 2;
+}
+
+.picture {
+    background-image:url(table\ mountain.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.profile-pic {
+    margin: 0 auto;
+    /* Push the image to the right edge */
+}
+
+.table {
+    margin: 0 auto;
+    /* Set left and right margin to auto, which centers the element */
+    width: 50%;
+    /* Optionally set a width for the container */
+}
+
+.subjects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subject {
+    flex: 1;
+    margin: 0.5px;
+    padding: 6px;
+}
+
+.subject img {
+    max-width: 100%;
+    /* height: auto; */
+}
+
+@media screen and (max-width: 960px) {
+    .subject {
+        flex-basis: 100%;
+
+    }
+}
+
+.placesImg {
+    width: 200px;
+    align-self: self-start;
+    padding-top: 2em;
+}
+
+/* Media Queries */
+@media (min-width: 960px) {
+
+
+    /* Historical Query */
+    .places {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+
+
+    .column {
+        display: flex;
+        gap: 10px;
+        margin-inline-start: auto;
+    }
+
+    /* 
+    @media (max-width: 960px) {
+        .places {
+            display: block;
+            width: 90%;
+        }
+    } */
+    .places {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+
+    /* History class */
+
+    .column {
+        display: flex;
+        gap: 10px;
+        margin-inline-start: auto;
+    }
+}
+
+* {
+    font-family: 'Lato', Helvetica, sans-serif;
+    color: #333447;
+    line-height: 1.5;
+    font-size: medium;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.85rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.120rem;
+}
+
+p {
+    font-size: 1.100rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+a:hover {
+    color: rgb(2, 2, 37);
+}
